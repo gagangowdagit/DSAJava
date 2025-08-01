@@ -1,23 +1,13 @@
-package BinarySearch;
+package LinearSearch;
 import java.util.*;
 
-public class Binarysearch {
-    public static int bins(int arr[], int n , int key){
-        int beg = 0 ;
-        int end = n-1;
-        while(beg<=end){
-            int mid = (beg+end)/2;
-            if(arr[mid]==key){
-                return mid;
-            }
-            else if(key>mid){
-                beg = mid+1;
-            }
-            else{
-                end = mid-1;
+public class linser {
+    public static int Linsearch(int arr[], int n , int key){
+        for(int i = 0 ; i<n;i++){
+            if(arr[i]==key){
+                return i;
             }
         }
-        
         return -1;
     }
     public static void main(String args[]){
@@ -31,7 +21,7 @@ public class Binarysearch {
         }
         System.out.println("Enter the element to search");
         int key = sc.nextInt();
-        int indi = bins(arr,n,key);
+        int indi = Linsearch(arr,n,key);
         if(indi ==-1){
             System.out.println("Element are not found");
         }
