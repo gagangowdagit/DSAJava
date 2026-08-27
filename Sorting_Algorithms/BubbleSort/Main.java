@@ -2,7 +2,7 @@ package BubbleSort;
 
 import java.util.Scanner;
 
-public class Bubsort {
+public class Main {
     public static void Bubsorting(int arr[], int n ){
         System.out.println("Bubble Short");
         for(int i=0;i<n-1;i++){

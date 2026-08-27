@@ -1,7 +1,7 @@
 package SelectionSort;
 import java.util.*;
 
-public class selsort {
+public class Main {
     public static void selsorting(int arr[], int n ){
         int min = 0;
         for(int i=0;i<n-1;i++){
@@ -13,10 +13,7 @@ public class selsort {
             int temp = arr[i];
             arr[i] = arr[min];
             arr[min]= temp;
-
-
         }
-       
     }
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
@@ -33,6 +30,5 @@ public class selsort {
             System.out.print(num);
         }
         sc.close();
-
     }
 }

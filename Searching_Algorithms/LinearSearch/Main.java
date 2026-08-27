@@ -1,7 +1,7 @@
 package LinearSearch;
 import java.util.*;
 
-public class linser {
+public class Main {
     public static int Linsearch(int arr[], int n , int key){
         for(int i = 0 ; i<n;i++){
             if(arr[i]==key){
@@ -29,6 +29,5 @@ public class linser {
             System.out.println("Elements are found at index: "+indi);
         }
         sc.close();
-
     }
 }
