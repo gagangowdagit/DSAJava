@@ -58,6 +58,21 @@ class Tree{
         System.out.println(root.data+" ");
     }
 
+    public boolean search(Node root, int data){
+        if(root==null){
+            return false;
+        }
+        if(data == root.data){
+            return true;
+        }
+        if(data < root.data){
+            return search(root.left,data);
+        }
+        else{
+            return search(root.right,data);
+        }
+    }
+
 }
 
 public class Main{
@@ -71,5 +86,7 @@ public class Main{
         tree1.inorder(tree1.root);
         tree1.preorder(tree1.root);
         tree1.postorder(tree1.root);
+
+        tree1.search(tree1.root, 6);
     }
 }
